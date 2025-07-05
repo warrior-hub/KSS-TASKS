@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="para">
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. At eum est, provident ducimus consequuntur doloribus minima nihil velit, recusandae dolorum, pariatur accusamus. Eos libero quam voluptatum id illo accusantium dicta, quod voluptatibus aspernatur debitis, animi illum consectetur culpa nobis labore error similique. Maxime, porro qui!
+    </p>
+    
+    <input type="button" id="btn " onclick="getPara()" value="getContent">
+
+    <p id="para2">
+        
+    </p>
+
+    <script>
+        function getPara() {
+            //var p1 = 
+            document.getElementById("para2").innerHTML = document.getElementById("para").innerHTML;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        #dv1{
+            width: 400px;
+            border: 2px solid black;
+            
+        }
+         #dv2{
+            width: 400px;
+            border: 2px solid black;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dv1" >
+      <center>
+          <h1>heading 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis placeat molestiae exercitationem, explicabo pariatur, sint consequatur quam dolor aliquid impedit, voluptate sequi nostrum!</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPIfiGgUML8G3ZqsNLHfaCnZK3I5g4tJabQ&s" height="200px" alt="">
+      </center>
+    </div><br><br>
+    <input type="button" value="click me" id="btn">
+    <div id="dv2">
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                 var dv2 = $("#dv1").html();
+                $("#dv2").html(dv2);
+
+
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>

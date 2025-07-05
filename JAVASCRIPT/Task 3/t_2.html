@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h3>Enter a String:</h3>
+  <input type="text" id="text">
+  <h3>Enter Character to Search:</h3>
+  <input type="text" id="ch">
+  <button onclick="findDetails()">Find Details</button>
+  <div id="output"></div>
+
+  <script>
+    function findDetails() {
+      let str = document.getElementById("text").value;
+      let ch = document.getElementById("ch").value;
+      let len = str.length;
+      let first = str.indexOf(ch);
+      let last = str.lastIndexOf(ch);
+      document.getElementById("output").innerHTML =
+        `Length of string: ${len}<br>First occurrence of '${ch}' at index: ${first}<br>Last occurrence of '${ch}' at index: ${last}`;
+    }
+  </script>
+</body>
+</html>

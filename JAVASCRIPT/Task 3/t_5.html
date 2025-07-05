@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h3>Enter Principal:</h3>
+  <input type="number" id="pa">
+  <h3>Enter Time (in years):</h3>
+  <input type="number" id="n">
+  <h3>Enter Rate (%):</h3>
+  <input type="number" id="r">
+  <button onclick="calculateSI()">Calculate SI</button>
+  <div id="siResult"></div>
+
+  <script>
+    function calculateSI() {
+      let SI = {
+        pa: parseFloat(document.getElementById("pa").value),
+        n: parseFloat(document.getElementById("n").value),
+        r: parseFloat(document.getElementById("r").value),
+        getSI: function () {
+          return (this.pa * this.n * this.r) / 100;
+        }
+      };
+
+      document.getElementById("siResult").innerText = "Simple Interest is: ₹" + SI.getSI();
+    }
+  </script>
+</body>
+</html>

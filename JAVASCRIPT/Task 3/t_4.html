@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <button onclick="showLaptop()">Show Laptop Info</button>
+  <div id="laptopInfo"></div>
+
+  <script>
+    function showLaptop() {
+      let Laptop = {
+        Id: 101,
+        Brand: "HP",
+        Price: 55000,
+        Processor: "i5"
+      };
+
+      let result = `Id: ${Laptop.Id}<br>Brand: ${Laptop.Brand}<br>Price: ₹${Laptop.Price}<br>Processor: ${Laptop.Processor}`;
+      document.getElementById("laptopInfo").innerHTML = result;
+    }
+  </script>
+</body>
+</html>

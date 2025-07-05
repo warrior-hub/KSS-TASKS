@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .main {
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .main h1,
+        .main h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .main h1 {
+            font-size: 2.5rem;
+            color: #00adb5;
+        }
+
+        .main h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+             
+        }
+
+      
+
+        .card h3 {
+            color: #00adb5;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            color: #ccc;
+          
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Responsive Service Section Design</h1>
+        <h2>Our Services</h2>
+
+        <div class="services">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ea porro ut!</p>
+            </div>
+
+            <div class="card">
+                <h3>App Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus nobis cupiditate.</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ut soluta magni.</p>
+            </div>
+
+            <div class="card">
+                <h3>Responsive Design</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, id. Dolorum, architecto.</p>
+            </div>
+
+            <div class="card">
+                <h3>Advertising</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo dolorem obcaecati!</p>
+            </div>
+
+            <div class="card">
+                <h3>WordPress</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dignissimos incidunt animi!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Processing Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        select {
+            padding: 5px;
+        }
+
+        .btn {
+            background-color: #414441;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Product Order Form</h2>
+
+    <form>
+        <table>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Product Pic</th>
+                <th>Order</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Mouse</td>
+                <td>
+                    <select>
+                        <option>-Select-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+                <td><img src="https://www.vhv.rs/dpng/d/427-4277293_computer-mouse-png-transparent-png.png" alt="Mouse"></td>
+                <td><input type="checkbox" name="order101"></td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Printer</td>
+                <td>
+                    <select>
+                        <option>-Select-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+                <td><img src="https://w7.pngwing.com/pngs/429/447/png-transparent-inkjet-printing-multi-function-printer-epson-printer-ink-electronics-electronic-device-thumbnail.png" alt="Printer"></td>
+                <td><input type="checkbox" name="order102"></td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Scanner</td>
+                <td>
+                    <select>
+                        <option>-Select-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+                <td><img src="https://pngimg.com/uploads/scanner/scanner_PNG11347.png" alt="Scanner"></td>
+                <td><input type="checkbox" name="order103"></td>
+            </tr>
+
+            <tr>
+                <td>104</td>
+                <td>Monitor</td>
+                <td>
+                    <select>
+                        <option>-Select-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+                <td><img src="https://www.lapcare.com/cdn/shop/products/1_f689f514-8d8c-4bc9-ab9f-b1b4949d227a.webp?v=1747984432&width=600" alt="Monitor"></td>
+                <td><input type="checkbox" name="order104"></td>
+            </tr>
+
+            <tr>
+                <td colspan="5">
+                    <button type="submit" class="btn">ADD TO CART</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

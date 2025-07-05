@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+     <button id="showBtn">Show Image</button>
+  <button id="hideBtn">Hide Image</button><br><br>
+  <img id="myImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3wxJ0c-jC6VcDASO9aiDWD9zWAeJLKrS5gg&s" style="display:none;" />
+
+  <script>
+    $(document).ready(function(){
+      $("#showBtn").click(function(){
+        $("#myImg").show();
+      });
+      $("#hideBtn").click(function(){
+        $("#myImg").hide();
+      });
+    });
+  </script>
+</body>
+</html>

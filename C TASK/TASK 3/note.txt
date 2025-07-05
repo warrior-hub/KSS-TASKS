@@ -1,0 +1,61 @@
+// types of loop
+// ===============
+
+// 1) entery control loop
+//    => loop that cheks for the given condation before entering
+
+
+
+// syntax of for loop
+// -----------------
+for ( intilization, contation, updation)
+{
+   // statement.....
+}
+
+// syntax of while loop
+// -------------------
+while(condation)
+{
+    // statemnet...
+} updation;
+
+
+// syntax of do while loop
+// ----------------------
+do
+{
+    /* code */
+    // updaation
+} while (condition);
+
+// WAP to domonstrate the of entry and exit control loop c
+
+/*** 
+#include<stdio.h>
+int main(){
+    int x,yz;
+   
+   for ( x=10; x<=5 ; x++) //ye run nhi higa kuki yaha x 5 se bada hai
+   {
+    printf("%d",x);
+   }
+   y =10;
+   while (y<=5) //ye bhi run n hi hoga kuki yaha bhi y 5 se bada hai
+   {
+    printf("%d",y);
+    y++
+   }
+   z = 10;
+   do
+   {
+    printf("%d",z)
+   } while (z<=5);
+   
+}   
+   **/
+
+note: is is mandatory to traminate do while loop using (;)
+do while loop always excute atluat one time.
+
+=============================================================

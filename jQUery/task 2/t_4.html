@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <button id="toggleForm">Show/Hide Feedback Form</button>
+
+  <div id="feedbackForm" style="display:none; margin-top:10px;">
+    Name: <input type="text" id="fName"><br>
+    Feedback: <textarea id="fMsg"></textarea><br>
+    <button onclick="validateFeedback()">Submit</button>
+  </div>
+
+  <script>
+    $("#toggleForm").click(function(){
+      $("#feedbackForm").toggle();
+    });
+
+    function validateFeedback() {
+      let name = $("#fName").val();
+      let msg = $("#fMsg").val();
+
+      if (name.trim() === "" || msg.trim() === "") {
+        alert("Please fill out all fields.");
+      } else {
+        alert("Feedback Submitted. Thank you!");
+      }
+    }
+  </script>
+</body>
+</html>

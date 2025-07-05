@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h3>Click to find max from array</h3>
+  <button onclick="findMax()">Find Max</button>
+
+  <script>
+    function findMax() {
+      let arr = [23, 45, 67, 12, 89, 3, 99, 34, 22, 10]; // static array
+      let max = arr[0];
+
+      for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+          max = arr[i];
+        }
+      }
+
+      alert("Maximum number is: " + max);
+    }
+  </script>
+</body>
+</html>

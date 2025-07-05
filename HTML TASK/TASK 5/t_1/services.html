@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Kamadgiri Software</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 20px 40px;
+      border-bottom: 1px solid #333;
+       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color:  #00ADB5;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+     nav a:hover {
+      color: #90caf9;
+    }
+
+    nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #90caf9;
+    }
+
+    .main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .main h1 {
+      font-size: 2.5rem;
+      color: #00adb5;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .main h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #90caf9;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+     
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .card h3 {
+      color: #00adb5;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin-right: 0;
+      }
+
+      .card {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kamadgiri Software Solution Ltd.</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <h1>Our Services</h1>
+    <h2>What We Offer</h2>
+
+    <div class="services">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Custom, scalable, and secure websites tailored to your business goals.</p>
+      </div>
+
+      <div class="card">
+        <h3>App Development</h3>
+        <p>Cross-platform mobile apps for iOS and Android to reach your audience anywhere.</p>
+      </div>
+
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>Visually stunning and user-friendly UI/UX design to make your brand stand out.</p>
+      </div>
+
+      <div class="card">
+        <h3>Responsive Design</h3>
+        <p>Seamless experiences across all devices — phones, tablets, and desktops.</p>
+      </div>
+
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>Effective SEO, social media, and advertising strategies to grow your business.</p>
+      </div>
+
+      <div class="card">
+        <h3>WordPress Solutions</h3>
+        <p>Fast and flexible WordPress websites with plugin and theme customization.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Kamadgiri Software Solution Ltd. | All rights reserved.</p>
+  </footer>
+</body>
+</html>

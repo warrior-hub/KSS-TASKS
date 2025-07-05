@@ -1,0 +1,14 @@
+ <h3>Enter First Name:</h3>
+  <input type="text" id="fname">
+  <h3>Enter Last Name:</h3>
+  <input type="text" id="lname">
+  <button onclick="showName()">Show Full Name</button>
+  <span id="fullname"></span>
+
+  <script>
+    function showName() {
+      let first = document.getElementById("fname").value;
+      let last = document.getElementById("lname").value;
+      document.getElementById("fullname").innerText = "Full Name: " + first + " " + last;
+    }
+  </script>

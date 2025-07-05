@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="num1" placeholder="enter first number"><br><br>
+    <input type="number" id="num2" placeholder="enter second numer"> <br><br>
+    <select name="chose option" onchange="calculate()" id="opt">
+        <option value="">choose option</option>
+        <option value="add">addition</option>
+        <option value="sub">subtraction</option>
+        <option value="mul">Multiplication</option>
+        <option value="div">Division</option>
+    </select><br><br>
+    <p id="para">
+
+    </p>
+
+    <script>
+        function calculate() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var opt = document.getElementById("opt").value;
+
+            if (opt == "add") {
+                var reslut = num1 + num2;
+                document.getElementById("para").innerHTML = "addition is: " + reslut;
+            }
+            if (opt == "sub") {
+                var reslut = num1 - num2;
+                document.getElementById("para").innerHTML = "subtraction is: " + reslut;
+            }
+            if (opt == "mul") {
+                var reslut = num1 * num2;
+                document.getElementById("para").innerHTML = "multiplication is: " + reslut;
+            }
+            if (opt == "div") {
+                var reslut = num1 / num2;
+                document.getElementById("para").innerHTML = "Division is: " + reslut;
+            }
+        }
+    </script>
+</body>
+
+</html>

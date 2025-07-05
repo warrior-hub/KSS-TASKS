@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <input type="number" id="num" placeholder="enter a number"><br><br>
+    <input type="number" id="num2" placeholder="enter second number"><br><br>
+
+    <input type="button" placeholder="" id="add" value="add">
+    <input type="button" placeholder="" id="sub" value="sub">
+    <input type="button" placeholder="" id="mul" value="mul">
+    <input type="button" placeholder="" id="div" value="div"><br><br>
+   <p id="txt">
+
+   </p>
+
+    <script>
+        $(document).ready(function () {
+            $("#add").click(function () {
+                var num = parseInt($("#num").val());
+                var num2 = parseInt($("#num2").val());
+                var result = num + num2;
+
+                $("#txt").html("addation is: "+result);
+
+
+            })
+             $("#mul").click(function () {
+                var num = parseInt($("#num").val());
+                var num2 = parseInt($("#num2").val());
+                var result = num * num2;
+
+                $("#txt").html("multiplication is: "+result);
+
+
+            })
+             $("#div").click(function () {
+                var num = parseInt($("#num").val());
+                var num2 = parseInt($("#num2").val());
+                var result = num /num2;
+
+                $("#txt").html("division is: "+result);
+
+
+            })
+              $("#sub").click(function () {
+                var num = parseInt($("#num").val());
+                var num2 = parseInt($("#num2").val());
+                var result = num -num2;
+
+                $("#txt").html("Substraction is: "+result);
+
+
+            })
+        })
+    </script>
+
+</body>
+
+</html>
